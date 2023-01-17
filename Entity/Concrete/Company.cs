@@ -11,10 +11,11 @@ namespace Entity.Concrete
     {
         [Key]
         public int CompanyId { get; set; }
+        public string CompanyName { get; set; }
         public bool Status { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime FinishTime { get; set; }
 
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

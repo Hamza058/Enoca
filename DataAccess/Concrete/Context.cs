@@ -15,8 +15,27 @@ namespace DataAccess.Concrete
         {
             optionsBuilder.UseSqlServer("server=HKILIC\\SQLEXPRESS;database=DbEnoca;integrated security=true;");
         }
+
         public DbSet<Company> Companies { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
+
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+        //    //modelBuilder.Entity<Company>()
+        //    //    .HasMany(x => x.Products)
+        //    //    .WithOne(x => x.Company)
+        //    //    .HasForeignKey(x => x.CompanyId);
+        //    //modelBuilder.Entity<Product>()
+        //    //    .HasKey(x=>x.CompanyId);
+
+        //    modelBuilder.Entity<Product>()
+        //        .HasKey(x => x.CompanyId);
+        //    modelBuilder.Entity<Product>()
+        //        .HasOne(x => x.Company)
+        //        .WithMany(x => x.Products)
+        //        .HasForeignKey(x => x.CompanyId);
+        //}
     }
 }
