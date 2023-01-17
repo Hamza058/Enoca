@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enoca", "Enoca\Enoca.csproj", "{F3B326FE-C63D-46B1-B020-3B86740E75EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "Entity\EntityLayer.csproj", "{5DEA78DC-32FB-4FA0-8826-69A99D42EBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccess\DataAccessLayer.csproj", "{8AF66AF7-9A24-4E4A-B6F6-9AD88150629E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3B326FE-C63D-46B1-B020-3B86740E75EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B326FE-C63D-46B1-B020-3B86740E75EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B326FE-C63D-46B1-B020-3B86740E75EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B326FE-C63D-46B1-B020-3B86740E75EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DEA78DC-32FB-4FA0-8826-69A99D42EBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DEA78DC-32FB-4FA0-8826-69A99D42EBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DEA78DC-32FB-4FA0-8826-69A99D42EBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DEA78DC-32FB-4FA0-8826-69A99D42EBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF66AF7-9A24-4E4A-B6F6-9AD88150629E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF66AF7-9A24-4E4A-B6F6-9AD88150629E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF66AF7-9A24-4E4A-B6F6-9AD88150629E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF66AF7-9A24-4E4A-B6F6-9AD88150629E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D5CDD48-5AE1-4735-9315-8B2BE35CE8FA}
+	EndGlobalSection
+EndGlobal
