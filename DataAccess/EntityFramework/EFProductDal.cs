@@ -13,7 +13,7 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EFProductDal : GenericRepository<Product>, IProductDal
     {
-        public List<Product> GetListWithBrand()
+        public List<Product> GetListWithCompany()
         {
             using (var c = new Context())
             {
