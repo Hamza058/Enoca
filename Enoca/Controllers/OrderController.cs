@@ -32,7 +32,6 @@ namespace Enoca.Controllers
                     {
                         return await Task.FromResult(NotFound("Firma Şuanda Sipariş Almıyor"));
                     }
-                    
                 }
                 else
                 {

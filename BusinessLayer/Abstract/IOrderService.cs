@@ -9,6 +9,5 @@ namespace BusinessLayer.Abstract
 {
     public interface IOrderService : IGenericService<Order>
     {
-        List<Order> GetWithProduct();
     }
 }

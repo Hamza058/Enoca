@@ -18,11 +18,6 @@ namespace BusinessLayer.Concrete
             _orderDal = orderDal;
         }
 
-        public List<Order> GetWithProduct()
-        {
-            return _orderDal.GetListWithProduct();
-        }
-
         public void TAdd(Order t)
         {
             _orderDal.Insert(t);

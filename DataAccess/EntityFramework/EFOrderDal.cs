@@ -13,12 +13,5 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EFOrderDal : GenericRepository<Order>, IOrderDal
     {
-        public List<Order> GetListWithProduct()
-        {
-            using (var c = new Context())
-            {
-                return c.Orders.Include(x => x.Product).ToList();
-            }
-        }
     }
 }

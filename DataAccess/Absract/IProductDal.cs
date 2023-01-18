@@ -9,6 +9,5 @@ namespace DataAccessLayer.Absract
 {
     public interface IProductDal : IGenericDal<Product>
     {
-        List<Product> GetListWithCompany();
     }
 }
