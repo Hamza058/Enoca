@@ -12,11 +12,16 @@ namespace Enoca.Controllers
     {
         ProductManager pm = new ProductManager(new EFProductDal());
 
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return await Task.FromResult(Ok(pm.TGetList()));
+        }
         [HttpPost]
         public async Task<IActionResult> Post(Product product)
         {
             pm.TAdd(product);
-            return await Task.FromResult(Ok("Başarıyla Şirket Eklendi"));
+            return await Task.FromResult(Ok("Başarıyla ürün Eklendi"));
         }
     }
 }

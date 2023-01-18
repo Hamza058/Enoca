@@ -15,14 +15,30 @@ namespace Enoca.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var companies = cm.TGetList();
-            return await Task.FromResult(Ok(companies));
+            return await Task.FromResult(Ok(cm.TGetList()));
         }
         [HttpPost]
         public async Task<IActionResult> Post(Company company)
         {
             cm.TAdd(company);
             return await Task.FromResult(Ok("Başarıyla Şirket Eklendi"));
+        }
+        [HttpPut]
+        public async Task<IActionResult> Put(Company company)
+        {
+            var value = cm.TGetByID(company.CompanyId);
+            if (value != null)
+            {
+                value.StartTime = company.StartTime;
+                value.FinishTime= company.FinishTime;
+                value.Status = company.Status;
+                cm.TUpdate(value);
+                return await Task.FromResult(Ok("Başarıyla Güncellendi"));
+            }
+            else
+            {
+                return await Task.FromResult(NotFound("Girilen id ye ait şirket bulunamadı"));
+            }
         }
     }
 }

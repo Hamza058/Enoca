@@ -16,6 +16,7 @@ namespace Entity.Concrete
         public DateTime StartTime { get; set; }
         public DateTime FinishTime { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public ICollection<Product> Products { get; set; }
+
     }
 }
